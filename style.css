@@ -1,0 +1,238 @@
+/*   
+Theme Name: Tabinikki
+Theme URI: http://matmm.me/tabinikki/
+Description: Your clean, responsive travel diary for Wordpress.
+Author: Mathieu Mayer-Mazzoli
+Author URI: http://matmm.me
+Version: 1.0
+*/
+
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.chromeframe {position: absolute; top: 0;}
+
+/* Natural Elements */
+
+body {font-family: Georgia, serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
+h1, h2, h3, h4, h5 {font-family: Helvetica Neue, Arial, sans-serif; }
+
+p {font-size: 1.25rem; line-height: 1.5;}
+
+a {color: #333;}
+a:hover {color: #3aeacb;}
+
+blockquote {margin: 35px 0 35px 20px; padding-left: 20px; border-left: 5px solid #eee; color: #666;}
+blockquote > p, blockquote > a {font-style: italic; font-size: 1.85rem; line-height: 3rem!important;}
+
+/* Color of the text when non-specified */
+body, select, input, textarea {color: #333;}
+
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #3aeacb; color: #fff; text-shadow: none;}
+::selection {background: #3aeacb; color: #fff; text-shadow: none;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+/* Webkit Input Reset */
+input[type="search"] { -webkit-appearance: textfield; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {display: none;}
+
+
+/* And here begins the WordPress fun.
+-------------------------------------------------------------------------------*/
+
+/* Structure */
+
+#wrapper {width: 100%; height: 100%;}
+
+#sideheader {
+	width: 300px; /* This should be equal to #main's margin-left property */
+	padding: 40px 30px;
+	height: 100%;
+	min-height: 600px;
+	position: fixed;
+	z-index: 1000;
+	background-color: #6e737b;
+	background: url('_/inc/img/sideheader-bg.jpg') #333 no-repeat right;
+	background-size: cover;
+}
+
+#main {
+	margin-left: 300px; /* This should be equal to #sideheader's width property */
+	padding: 40px 30px;
+	min-height: 100%;
+	max-width: 770px;
+}
+
+#footer {margin: 40px 0 0 0; font-style: italic;}
+
+
+/* WP Menu Desktop */
+#nav {margin: 40px 0;}
+#nav ul li {font: 0.80rem 'Helvetica Neue', Arial, sans-serif; text-transform: uppercase; margin-bottom: 20px;}
+#nav ul li a {text-decoration: none; color: #fff; letter-spacing: 0.15em; -webkit-transition: all 0.1s linear; transition: all 0.1s linear;}
+#nav ul li a:hover {margin-left: 6px;}
+
+/* WP Menu Mobile */
+#nav-toggle {position: absolute; top: 0; right: 0; margin: 34px 30px 0 0; display: none; color: #fff; font-size: 1.8rem; cursor: pointer;}
+#mobilenav {display: none; width: 100%;}
+#mobilenav ul {width: 100%; background: #fff;}
+#mobilenav ul li {font: 0.80rem 'Helvetica Neueu', Arial, sans-serif; text-align: left; text-transform: uppercase; padding: 20px 0; border-bottom: 1px solid #eee;}
+#mobilenav ul li a {text-decoration: none; color: #333; letter-spacing: 0.15em; padding-left: 30px; }
+
+/* Blog Title and Description */
+.title, .title a {font-size: 1.666rem; padding:0; margin: 0 0 10px 0; text-decoration: none; color: #fff; -webkit-transition: all 0.5s; transition: all 0.5s;}
+.title a:hover {color: #3aeacb;}
+.description {color: #fff; padding: 10px 0; font-size: 0.95rem;}
+
+/* Posts and Content Properties */
+
+.post {margin-top: 40px; padding-bottom: 30px; border-bottom: 1px solid #eee;}
+.post:first-child {margin-top: 0;}
+
+.entry-content {}
+
+.entry-content p {line-height: 1.9rem; margin-bottom: 20px;}
+.entry-title {font-size: 2rem; font-weight: bold; /*text-transform: uppercase;*/ margin-bottom: 10px; line-height: 1.4;}
+.entry-title a {text-decoration: none; color: #333;}
+.entry-title a:hover {color: #3aeacb;}
+.time-author, .time-author a {font-family: Georgia, Serif; font-size: 1rem; font-weight: normal; color: #999; margin-bottom: 20px;}
+.time-author a:hover {color: #3aeacb;}
+.page-title {text-transform: uppercase; padding-bottom: 10px; border-bottom: 1px solid #eee; margin-bottom: 20px; color: #666;}
+.read-more {font-variant: small-caps;}
+
+/* Content Responsive Img */
+img {max-width: 100%; height: auto; -ms-interpolation-mode: bicubic;}
+.gallery {padding: 0; margin: 0;}
+.gallery-item {padding: 0 2% 20px 0;}
+.gallery-size-thumbnail {width: 100%;}
+.wp-caption {max-width: 100%; max-height: 100%; background: #f9f9f9;}
+.wp-caption-text {font-size: 1rem; text-align: left; padding-left: 10px; font-variant: small-caps;}
+
+/* Content Headings */
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5
+ {font-family: Georgia, Serif; text-align: left; color: #111; font-weight: bold; padding: 0 0 1em 0; margin: 0; font-style: normal;}
+.entry-content h1 {font-size: 2rem;}
+.entry-content h2 {font-size: 1.8rem;}
+.entry-content h3 {font-size: 1.6rem;}
+.entry-content h4 {font-size: 1.4rem;}
+.entry-content h5 {font-size: 1.2rem;}
+
+/* Content Lists */
+.entry-content ul, .entry-content ol {margin-bottom: 20px; padding: 0 40px; font-weight: normal; line-height: 1.95rem;}
+.entry-content ul {list-style-type: square;}
+.entry-content li {font-size: 1.25rem;}
+
+#meta {}
+
+/* Pagination */
+.navigation {margin-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee;}
+.navigation li {display: inline-block;}
+.next-posts a, .prev-posts a {font-variant: small-caps;}
+.prev-posts {float: right;}
+
+/* Searchform */ 
+#searchform {position: absolute; bottom: 0; left: 0; padding: 0 30px 30px 30px; width: 300px;}
+#s {width: 100%; border-radius: 0; border: none; padding: 10px 10px 10px 40px; color: #999; opacity: 0.5; background: url('_/inc/img/search-icon.png') no-repeat 10px #fff; background-size: 20px 20px; -webkit-transition: all 0.3s; transition: all 0.3s;}
+#s:focus {opacity: 1; outline: none !important;}
+
+/* Comments */
+#comments {margin: 40px 0 20px 0;}
+#commentform {width: 100%;}
+#commentform div {margin: 20px 0;}
+#comment {width: 100%;}
+#respond {padding: 20px 0 0; border-bottom: 1px solid #eee;}
+#respond div input, #respond div textarea {padding: 10px 15px; border: 1px solid #eee; border-radius: 3px; color: #999; font-family: Georgia, serif; font-weight: lighter;}
+#respond div input:focus, #respond div textarea:focus {border: 1px solid #333; outline: none !important; color: #333;}
+#submit {background: #fff; border: 1px solid #eee; font-size: 1rem; color: #333!important;}
+#submit:hover {background: #333; color: #fff!important;}
+.comments-title {font-size: 1.8rem; margin-bottom: 20px;}
+ol.commentlist {list-style: none;}
+ol.commentlist li {border: 1px solid #eee;}
+ol.commentlist li.alt {}
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment {padding: 4.5%; margin-bottom: 15px;}
+ol.commentlist li.comment div.comment-author {}
+ol.commentlist li.comment div.vcard {}
+ol.commentlist li.comment div.vcard cite.fn {font-style: normal; line-height: 2rem;}
+ol.commentlist li.comment div.vcard cite.fn a.url {}
+ol.commentlist li.comment div.vcard img.avatar {float:left; margin: 0 10px 10px 0; border-radius: 1000px; -webkit-border-radius: 1000px;}
+ol.commentlist li.comment div.vcard img.avatar-32 {}
+ol.commentlist li.comment div.vcard img.photo {}
+ol.commentlist li.comment div.vcard span.says {}
+ol.commentlist li.comment div.commentmetadata {}
+ol.commentlist li.comment div.comment-meta {font-size: 0.8rem;}
+ol.commentlist li.comment div.comment-meta a {color: #666; text-decoration: none;}
+ol.commentlist li.comment p {padding: 10px 0; line-height: 1.9rem; clear: both;}
+ol.commentlist li.comment ul {}
+ol.commentlist li.comment div.reply {font-size: 0.8rem; text-align: right; padding-right: 10px;}
+ol.commentlist li.comment div.reply a {font-weight: bold; text-decoration: none;}
+ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
+ol.commentlist li.comment ul.children li {}
+ol.commentlist li.comment ul.children li.alt {}
+ol.commentlist li.comment ul.children li.bypostauthor {}
+ol.commentlist li.comment ul.children li.byuser {}
+ol.commentlist li.comment ul.children li.comment {}
+ol.commentlist li.comment ul.children li.comment-author-admin {}
+ol.commentlist li.comment ul.children li.depth-2 {}
+ol.commentlist li.comment ul.children li.depth-3 {}
+ol.commentlist li.comment ul.children li.depth-4 {}
+ol.commentlist li.comment ul.children li.depth-5 {}
+ol.commentlist li.comment ul.children li.odd {}
+ol.commentlist li.even {background: #fff;}
+ol.commentlist li.odd {background: #fff;}
+ol.commentlist li.parent {}
+ol.commentlist li.thread-alt {}
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}
+
+
+/* Print styles! :(
+-------------------------------------------------------------------------------*/
+@media print {
+
+}
+
+
+/* Media queries! :)
+-------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 770px) {
+
+	#sideheader {position: relative; width: 100%; min-height: 0;}
+	#main {margin: 0;}
+	#nav {display: none;}
+	#nav-toggle {display: block;}
+	#searchform {position: relative; padding: 0; width: 100%;margin-top: 20px;}
+	p {font-size: 1.2rem; line-height: 1.4;}
+	blockquote > p, blockquote > a {font-size: 1.45rem; line-height: 2.4rem!important;}
+	.entry-title {font-size: 1.8rem;}
+	.entry-content li {font-size: 1.1rem;}
+
+}
+
+@media only screen and (max-width: 541px) { 
+
+	#main {padding: 30px 20px;}
+	#sideheader {padding: 30px 20px;}
+	#nav-toggle {margin: 24px 20px;}
+	#mobilenav ul li a {padding-left: 20px;}
+	p {font-size: 1.05rem;}
+	blockquote > p, blockquote > a {font-size: 1.25rem; line-height: 2.4rem!important;}
+	.entry-title {font-size: 1.5rem; }
+	.time-author, .time-author a {font-size: 0.9rem;}
+	.entry-content li {font-size: 1rem;}
+
+}
