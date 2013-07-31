@@ -62,8 +62,8 @@ input[type="search"]::-webkit-search-results-decoration {display: none;}
 	min-height: 600px;
 	position: fixed;
 	z-index: 1000;
-	background-color: #6e737b;
-	background: url('_/inc/img/sideheader-bg.jpg') #333 no-repeat right;
+	background-color: #999;
+	background: url('_/inc/img/sideheader-bg.jpg') no-repeat right;
 	background-size: cover;
 }
 
@@ -84,11 +84,11 @@ input[type="search"]::-webkit-search-results-decoration {display: none;}
 #nav ul li a:hover {margin-left: 6px;}
 
 /* WP Menu Mobile */
-#nav-toggle {position: absolute; top: 0; right: 0; margin: 34px 30px 0 0; display: none; color: #fff; font-size: 1.8rem; cursor: pointer;}
+#nav-toggle {position: absolute; top: 0; right: 0; margin: 34px 80px 0 0; display: none; color: #fff; font-size: 1.8rem; cursor: pointer;}
 #mobilenav {display: none; width: 100%;}
 #mobilenav ul {width: 100%; background: #fff;}
 #mobilenav ul li {font: 0.80rem 'Helvetica Neueu', Arial, sans-serif; text-align: left; text-transform: uppercase; padding: 20px 0; border-bottom: 1px solid #eee;}
-#mobilenav ul li a {text-decoration: none; color: #333; letter-spacing: 0.15em; padding-left: 30px; }
+#mobilenav ul li a {text-decoration: none; color: #333; letter-spacing: 0.15em; padding-left: 80px; }
 
 /* Blog Title and Description */
 .title, .title a {font-size: 1.666rem; padding:0; margin: 0 0 10px 0; text-decoration: none; color: #fff; -webkit-transition: all 0.5s; transition: all 0.5s;}
@@ -209,13 +209,14 @@ ol.commentlist li.thread-odd {}
 /* Media queries! :)
 -------------------------------------------------------------------------------*/
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 899px) {
 
-	#sideheader {position: relative; width: 100%; min-height: 0;}
-	#main {margin: 0;}
+	#sideheader {position: relative; width: 100%; min-height: 0; padding: 40px 80px;}
+	#main {margin: 0; padding: 40px 80px; max-width: 899px;}
 	#nav {display: none;}
 	#nav-toggle {display: block;}
-	#searchform {position: relative; padding: 0; width: 100%;margin-top: 20px;}
+	#searchform {position: relative; padding: 0; width: 100%; margin-top: 20px;}
+	#s {transition: all 0s; -webkit-transition: all 0s;}
 	p {font-size: 1.2rem; line-height: 1.4;}
 	blockquote > p, blockquote > a {font-size: 1.45rem; line-height: 2.4rem!important;}
 	.entry-title {font-size: 1.8rem;}
@@ -223,12 +224,12 @@ ol.commentlist li.thread-odd {}
 
 }
 
-@media only screen and (max-width: 541px) { 
+@media only screen and (max-width: 539px) { 
 
-	#main {padding: 30px 20px;}
-	#sideheader {padding: 30px 20px;}
-	#nav-toggle {margin: 24px 20px;}
-	#mobilenav ul li a {padding-left: 20px;}
+	#main {padding: 30px 25px;}
+	#sideheader {padding: 30px 25px;}
+	#nav-toggle {margin: 25px 25px;}
+	#mobilenav ul li a {padding-left: 25px;}
 	p {font-size: 1.05rem;}
 	blockquote > p, blockquote > a {font-size: 1.25rem; line-height: 2.4rem!important;}
 	.entry-title {font-size: 1.5rem; }
