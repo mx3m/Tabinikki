@@ -10,14 +10,6 @@ Tabinikki (旅日記) means "Travel Diary" in Japanese. It's a free theme for Wo
 
 You can see a live demo [here](http://www.matmm.me/tabinikki/demo/).
 
-## How to install this? 
-
-Well, if you already have an hosting platform and Wordpress installed on it: just download Tabinikki and upload the whole folder in wp-content/themes/ then activate it in your Wordpress Admin (Appearence/Themes). Done. 
-
-If you want your gravatar to be at a 64x64 pixels like in my demo, open the comment-template.php in wp-include and change the number accordingly somewhere around the line 1421. 
-
-Finally, I used the WP-Menu function in Tabinikki so you're free to customize your navigation menu directly from your Admin Panel (Appearance/Menu). 
-
 #### Tabinikki is light and responsive
 
 I made this theme with bloggers and travelers in mind. The layout is really simple and will fit any display. 
@@ -38,6 +30,14 @@ A sans-serif could do just fine as well but for long posts, I personnally always
 #### Tabinikki is easily cusomizable 
 
 Provided that you're a bit familiar with CSS! I made sure that the PHP files and stylesheet are well commented out so it's easier for novice DIYers like me to customize the theme in less than 10/15 minutes. 
+
+## How to install this? 
+
+Well, if you already have an hosting platform and Wordpress installed on it: just download Tabinikki and upload the whole folder in wp-content/themes/ then activate it in your Wordpress Admin (Appearence/Themes). Done. 
+
+If you want your gravatar to be at a 64x64 pixels like in my demo, open the comment-template.php in wp-include and change the number accordingly somewhere around the line 1421. 
+
+Finally, I used the WP-Menu function in Tabinikki so you're free to customize your navigation menu directly from your Admin Panel (Appearance/Menu). 
 
 ## HTML 5 Reset Wordpress Theme
 
