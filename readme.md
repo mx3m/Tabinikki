@@ -26,12 +26,12 @@ I made this theme with bloggers and travelers in mind. The layout is really simp
 
 This theme extensively uses the Georgia typeface. This typeface has proven to be one of the most readable (and beautiful, imho) serif typeface included from start in all decent modern computers (Mac, PC, Linux). Nevertheless, Georgia might be a little bit hard to read on low-quality smartphones displays; therefore, I'd probably change it for a better web-font such as: 
 
-> [FF Meta Serif Web Pro](https://typekit.com/fonts/ff-meta-serif-web-pro)
-> [FF Tisa Web Pro](https://typekit.com/fonts/ff-tisa-web-pro)
+[FF Meta Serif Web Pro](https://typekit.com/fonts/ff-meta-serif-web-pro)
+[FF Tisa Web Pro](https://typekit.com/fonts/ff-tisa-web-pro)
 
 Or even a modern serif like:
 
-> [Merriweather](http://www.fontsquirrel.com/fonts/merriweather)
+[Merriweather](http://www.fontsquirrel.com/fonts/merriweather)
 
 A sans-serif could do just fine as well but for long posts, I personnally always fancy a beautiful serif ;)
 
