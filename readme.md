@@ -33,10 +33,19 @@ Provided that you're a bit familiar with CSS! I made sure that the PHP files and
 
 ## How to install this? 
 
+#### Set-up
 Well, if you already have an hosting platform and Wordpress installed on it: just download Tabinikki and upload the whole folder in wp-content/themes/ then activate it in your Wordpress Admin (Appearence/Themes). Done. 
 
+#### Gravatar
 If you want your gravatar to be at a 64x64 pixels like in my demo, open the comment-template.php in wp-include and change the number accordingly somewhere around the line 1421. 
 
+#### Background Image / Color
+
+You don't like the background image under the header area? You want a plain color? Not a problem. Open style.css, find #sideheader, remove the background: url(); declaration (the whole line) and change the background-color: #333 to whatever color you want. 
+
+If you want to put another background-image, just replace 'sideheader-bg.jpg' in the theme folder (_/inc/img) with your own image. Although any image could do and will be stretched to fit the container area, I do recommend to use something around 800Hx300W pixels and a little bit blurry. 
+
+#### WP-Menu
 Finally, I used the WP-Menu function in Tabinikki so you're free to customize your navigation menu directly from your Admin Panel (Appearance/Menu). 
 
 ## HTML 5 Reset Wordpress Theme

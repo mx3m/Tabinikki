@@ -63,7 +63,7 @@ input[type="search"]::-webkit-search-results-decoration {display: none;}
 	position: fixed;
 	z-index: 1000;
 	background-color: #999;
-	background: url('_/inc/img/sideheader-bg.jpg') no-repeat right;
+	background: url('_/inc/img/sideheader-bg.jpg') no-repeat center;
 	background-size: cover;
 }
 
