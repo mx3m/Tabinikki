@@ -33,6 +33,9 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	
 	<!-- This is an un-minified, complete version of Modernizr. -->
 	<script src="<?php echo get_template_directory_uri(); ?>/_/js/modernizr-2.6.2.dev.js"></script>

@@ -1,8 +1,8 @@
 #  Tabinikki for WP
 
-## July 31th, 2013 update
+## August 2nd, 2013 update
 
-Initial commit of the theme. 
+Few changes. I added PT Serif and PT sans as native web fonts for the theme (fallback remains Georgia and Helvetica Neue) through Google Web Fonts and made a few adjustments in the layout (margins, etc.). 
 
 ## What is it?
 
@@ -14,9 +14,9 @@ You can see a live demo [here](http://www.matmm.me/tabinikki/demo/).
 
 I made this theme with bloggers and travelers in mind. The layout is really simple and will fit any display. 
 
-#### Tabinikki uses Georgia and Helvetica Neue 
+#### Tabinikki is PT PT!
 
-This theme extensively uses the Georgia typeface. This typeface has proven to be one of the most readable (and beautiful, imho) serif typeface included from start in all decent modern computers (Mac, PC, Linux). Nevertheless, Georgia might be a little bit hard to read on low-quality smartphones displays; therefore, I'd probably change it for a better web-font such as: 
+This theme only uses 2 typefaces: PT Serif and PT Sans; thanks to Google Fonts. I wish I could have used one of those but "quality ain't free": 
 
 * [FF Meta Serif Web Pro](https://typekit.com/fonts/ff-meta-serif-web-pro)
 * [FF Tisa Web Pro](https://typekit.com/fonts/ff-tisa-web-pro)
@@ -25,7 +25,7 @@ Or even a modern serif like:
 
 * [Merriweather](http://www.fontsquirrel.com/fonts/merriweather)
 
-A sans-serif could do just fine as well but for long posts, I personnally always fancy a beautiful serif ;)
+For the body text, a sans-serif could do just fine as well but for long posts, I personnally always fancy a beautiful serif ;)
 
 #### Tabinikki is easily cusomizable 
 
