@@ -156,23 +156,23 @@ ol.commentlist li.alt {}
 ol.commentlist li.bypostauthor {}
 ol.commentlist li.byuser {}
 ol.commentlist li.comment-author-admin {}
-ol.commentlist li.comment {padding: 4.5%; margin-bottom: 15px;}
+ol.commentlist li.comment, ol.commentlist li.pingback {padding: 4.5%; margin-bottom: 15px;}
 ol.commentlist li.comment div.comment-author {}
 ol.commentlist li.comment div.vcard {}
-ol.commentlist li.comment div.vcard cite.fn {font-style: normal; line-height: 2rem;}
+ol.commentlist li.comment div.vcard cite.fn, ol.commentlist li.pingback div.vcard cite.fn {font-style: normal; line-height: 2rem;}
 ol.commentlist li.comment div.vcard cite.fn a.url {}
 ol.commentlist li.comment div.vcard img.avatar {float:left; margin: 0 10px 10px 0; border-radius: 1000px; -webkit-border-radius: 1000px;}
 ol.commentlist li.comment div.vcard img.avatar-32 {}
 ol.commentlist li.comment div.vcard img.photo {}
 ol.commentlist li.comment div.vcard span.says {}
 ol.commentlist li.comment div.commentmetadata {}
-ol.commentlist li.comment div.comment-meta {font-size: 0.8rem;}
-ol.commentlist li.comment div.comment-meta a {color: #666; text-decoration: none;}
-ol.commentlist li.comment p {padding: 10px 0; line-height: 1.9rem; clear: both;}
+ol.commentlist li.comment div.comment-meta, ol.commentlist li.pingback div.comment-meta {font-size: 0.8rem;}
+ol.commentlist li.comment div.comment-meta a, ol.commentlist li.pingback div.comment-meta a {color: #666; text-decoration: none;}
+ol.commentlist li.comment p, ol.commentlist li.pingback p {padding: 10px 0; line-height: 1.9rem; clear: both;}
 ol.commentlist li.comment ul {}
-ol.commentlist li.comment div.reply {font-size: 0.8rem; text-align: right; padding-right: 10px;}
-ol.commentlist li.comment div.reply a {font-weight: bold; text-decoration: none;}
-ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
+ol.commentlist li.comment div.reply, ol.commentlist li.pingback div.reply {font-size: 0.8rem; text-align: right; padding-right: 10px;}
+ol.commentlist li.comment div.reply a, ol.commentlist li.pingback div.reply a {font-weight: bold; text-decoration: none;}
+ol.commentlist li.comment ul.children, ol.commentlist li.pingback ul.children {list-style: none; margin: 10px 0 0;}
 ol.commentlist li.comment ul.children li {}
 ol.commentlist li.comment ul.children li.alt {}
 ol.commentlist li.comment ul.children li.bypostauthor {}
